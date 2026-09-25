@@ -7,6 +7,7 @@ class MovieCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: Colors.white,
+      elevation: 1,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

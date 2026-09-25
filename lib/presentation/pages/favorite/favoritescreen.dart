@@ -19,22 +19,20 @@ class FavoriteScreen extends StatelessWidget {
                   endActionPane: ActionPane(
                     motion: const ScrollMotion(),
                     children: [
-                      ClipRRect(
-                        borderRadius: const BorderRadius.only(
-                          topRight: Radius.circular(5),
+                      SlidableAction(
+                        onPressed: (context) {
+                          print('Event: Tombol Hapus Diklik');
+                        },
+                        backgroundColor: Colors.red,
+                        foregroundColor: Colors.white,
+                        icon: Icons.delete,
+                        label: 'Hapus',
+                        borderRadius: BorderRadius.only(
                           bottomRight: Radius.circular(5),
+                          topRight: Radius.circular(5)
                         ),
-                        child: SlidableAction(
-                          onPressed: (context) {
-                            print('Event: Tombol Hapus Diklik');
-                          },
-                          backgroundColor: Colors.red,
-                          foregroundColor: Colors.white,
-                          icon: Icons.delete,
-                          label: 'Hapus',
-                        ),
-                      ),
-                    ],
+                      )
+                    ]
                   ),
                   child: MovieCard(),
                 ),
