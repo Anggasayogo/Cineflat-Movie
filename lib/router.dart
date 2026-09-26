@@ -1,6 +1,7 @@
 import 'package:cineflat/presentation/pages/favorite/favoritescreen.dart';
 import 'package:cineflat/presentation/pages/home/homescreen.dart';
 import 'package:cineflat/presentation/pages/search/searchscreen.dart';
+import 'package:cineflat/presentation/pages/splash/splashscreen.dart';
 import 'package:cineflat/presentation/pages/widget/bottom_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -16,7 +17,7 @@ final GoRouter navigationRoute = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: '/',
+              path: '/home',
               builder: (context, state) => const HomeScreen(),
             ),
           ],
@@ -45,16 +46,8 @@ final GoRouter navigationRoute = GoRouter(
     GoRoute(
       path: '/',
       builder: (BuildContext context, GoRouterState state) {
-        return const HomeScreen();
+        return const SplashScreen();
       },
-      routes: [
-        GoRoute(
-          path: 'details',
-          builder: (BuildContext context, GoRouterState state) {
-            return const FavoriteScreen();
-          },
-        ),
-      ],
     ),
   ],
 );

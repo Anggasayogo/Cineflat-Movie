@@ -20,7 +20,7 @@ class TopRatedMovieCard extends StatelessWidget {
               child: Image.asset(
                 'assets/images/spiderman.png',
                 width: double.infinity, // Mengisi seluruh lebar Container (180)
-                height: 160,
+                height: 140,
                 fit: BoxFit.cover,
               ),
             ),
@@ -35,7 +35,6 @@ class TopRatedMovieCard extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      color: Colors.black,
                       fontWeight: FontWeight.w600,
                       fontSize: 12,
                     ),

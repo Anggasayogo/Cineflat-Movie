@@ -9,6 +9,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Container(
+          child: Row(
+            children: [
+              Text(
+                "Cinebook Flutter",
+                style: TextStyle(color: Colors.white),
+              )
+            ],
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),

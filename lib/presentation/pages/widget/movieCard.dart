@@ -6,7 +6,6 @@ class MovieCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white,
       elevation: 1,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,7 +31,6 @@ class MovieCard extends StatelessWidget {
                   Text(
                     "Spiderman No Way Home",
                     style: TextStyle(
-                      color: Colors.black,
                       fontWeight: FontWeight(400),
                       fontSize: 18,
                     ),
