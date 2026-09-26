@@ -16,7 +16,10 @@ class HomeScreen extends StatelessWidget {
             children: [
               Text(
                 "Cinebook Flutter",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold
+                ),
               )
             ],
           ),
@@ -31,7 +34,14 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 15),
-                Text("Popular Movie"),
+                Text(
+                  "Popular Movie",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500
+                  ),
+                ),
+                SizedBox(height: 5),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -43,7 +53,14 @@ class HomeScreen extends StatelessWidget {
                   )
                 ),
                 SizedBox(height: 15),
-                Text("Top Rated"),
+                Text(
+                  "Top Rated",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500
+                  ),
+                ),
+                SizedBox(height: 5),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -55,7 +72,14 @@ class HomeScreen extends StatelessWidget {
                   )
                 ),
                 SizedBox(height: 15),
-                Text("Now Playing"),
+                Text(
+                  "Now Playing",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500
+                  ),
+                ),
+                SizedBox(height: 5),
                 MovieCard(),
               ],
             ),

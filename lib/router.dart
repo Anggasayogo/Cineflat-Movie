@@ -38,8 +38,6 @@ final GoRouter navigationRoute = GoRouter(
             ),
           ],
         ),
-
-        
       ]
     ),
 

@@ -35,8 +35,8 @@ class TopRatedMovieCard extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 12,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 15,
                     ),
                   ),
                   const SizedBox(height: 4), // Jarak vertikal ke deskripsi
